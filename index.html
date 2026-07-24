@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currency Converter</title>
+
+  <!-- Google Fonts: a serif for the big numbers, a mono font for currency codes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Our own stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="page">
+
+    <p class="eyebrow">Live Exchange Rates</p>
+    <h1>Currency Converter</h1>
+
+    <!-- The main card, styled like a banknote -->
+    <div class="note">
+
+      <!-- FROM currency -->
+      <div class="field-block">
+        <div class="field-label">
+          <span>You send</span>
+          <span class="flag-badge" id="fromFlag">🇺🇸 USD</span>
+        </div>
+        <div class="field-row">
+          <select id="fromCurrency" class="currency-select"></select>
+          <input type="text" id="amountInput" class="amount-input" value="1,000" inputmode="decimal">
+        </div>
+      </div>
+
+      <!-- Swap button sits between the two fields -->
+      <div class="divider">
+        <button id="swapBtn" class="swap-btn" aria-label="Swap currencies">⇅</button>
+      </div>
+
+      <!-- TO currency -->
+      <div class="field-block">
+        <div class="field-label">
+          <span>You get</span>
+          <span class="flag-badge" id="toFlag">🇮🇳 INR</span>
+        </div>
+        <div class="field-row">
+          <select id="toCurrency" class="currency-select"></select>
+          <div id="resultDisplay" class="amount-display">—</div>
+        </div>
+      </div>
+
+      <!-- Small text showing the live rate -->
+      <div class="rate-strip">
+        <span id="rateText">Loading rate…</span>
+        <span id="updatedText"></span>
+      </div>
+
+    </div>
+
+    <!-- Quick shortcut buttons for popular currency pairs -->
+    <div class="quick" id="quickPairs"></div>
+
+    <p class="foot-note">Rates from frankfurter.app (European Central Bank data)</p>
+
+  </div>
+
+  <!-- Our own JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>
