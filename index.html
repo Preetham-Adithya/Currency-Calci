@@ -5,24 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Currency Converter</title>
 
-  <!-- Google Fonts: a serif for the big numbers, a mono font for currency codes -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 
-  <!-- Our own stylesheet -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <div class="page">
 
-    <p class="eyebrow">Live Exchange Rates</p>
     <h1>Currency Converter</h1>
 
-    <!-- The main card, styled like a banknote -->
     <div class="note">
 
-      <!-- FROM currency -->
       <div class="field-block">
         <div class="field-label">
           <span>You send</span>
@@ -34,12 +29,10 @@
         </div>
       </div>
 
-      <!-- Swap button sits between the two fields -->
       <div class="divider">
         <button id="swapBtn" class="swap-btn" aria-label="Swap currencies">⇅</button>
       </div>
 
-      <!-- TO currency -->
       <div class="field-block">
         <div class="field-label">
           <span>You get</span>
@@ -51,7 +44,6 @@
         </div>
       </div>
 
-      <!-- Small text showing the live rate -->
       <div class="rate-strip">
         <span id="rateText">Loading rate…</span>
         <span id="updatedText"></span>
@@ -59,14 +51,12 @@
 
     </div>
 
-    <!-- Quick shortcut buttons for popular currency pairs -->
     <div class="quick" id="quickPairs"></div>
 
-    <p class="foot-note">Rates from frankfurter.app (European Central Bank data)</p>
+    <p class="foot-note">Currency Rates are based on Year 2025</p>
 
   </div>
 
-  <!-- Our own JavaScript file -->
   <script src="script.js"></script>
 </body>
 </html>
