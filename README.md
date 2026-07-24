@@ -1,14 +1,13 @@
-# 💱 Currency Converter
+#  Currency Converter
 
 A clean, banknote-inspired currency converter that fetches **live exchange rates** and converts between 12+ world currencies in real time.
 
-**🔗 Live demo:** _add your GitHub Pages link here once deployed_
+**🔗 Live demo:** (https://preetham-adithya.github.io/Currency-Calci/)
 
 ![Currency Converter preview](preview.png)
 
 ## Features
 
-- Live mid-market exchange rates (via the free [frankfurter.app](https://www.frankfurter.app/) API — no API key needed)
 - Convert between 12 major currencies with flag badges
 - One-click swap between "from" and "to" currencies
 - Quick-pick shortcuts for popular currency pairs (USD → INR, GBP → USD, etc.)
@@ -27,10 +26,10 @@ A clean, banknote-inspired currency converter that fetches **live exchange rates
 
 ```
 currency-converter/
-├── index.html      # page markup
-├── style.css        # all styling
-├── script.js         # conversion logic + API calls
-├── preview.png       # screenshot (optional, for this README)
+├── index.html      
+├── style.css        
+├── script.js         
+├── preview.png       
 └── README.md
 ```
 
@@ -39,7 +38,7 @@ currency-converter/
 No installation needed — it's plain HTML/CSS/JS.
 
 1. Clone or download this repository
-2. Open `index.html` in your browser
+2. Open `index.html` in browser
 
 That's it. An internet connection is needed for it to fetch live rates.
 
@@ -50,11 +49,8 @@ This project is deployed for free using **GitHub Pages**. See the steps in the s
 1. Push the code to a GitHub repository
 2. Go to **Settings → Pages**
 3. Set the source branch to `main` and folder to `/ (root)`
-4. Your site goes live at `https://<your-username>.github.io/<repo-name>/`
+4. Your site goes live at `https://preetham-adithya.github.io/Currency-Calci/`
 
-## Credits
-
-Exchange rate data provided by [Frankfurter](https://www.frankfurter.app/), which sources rates from the European Central Bank.
 
 ## License
 
